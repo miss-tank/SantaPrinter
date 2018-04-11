@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#ffffff"
+    tools:context="com.example.android.printersettings.MainActivity">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  CopyRight Text"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:buttonTint="#940000"
+        android:id="@+id/DateCheckbox"/>
+
+
+    <TextView
+        android:layout_below="@+id/DateCheckbox"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Center Text!"
+        android:saveEnabled="true"
+        android:id="@+id/centerText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerEditText"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#000000"
+        android:layout_below="@+id/centerText"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ImageOptionLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_weight="2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/centerEditText">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5effffff"
+            android:id="@+id/Player_1_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Left Image"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:id="@+id/lefttext"
+                />
+
+
+            <Button
+                android:id="@+id/ButtonLeftupload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/lefttext"
+                android:text="Upload"/>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/leftImageView"
+                android:layout_below="@+id/ButtonLeftupload"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Player_2_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Right Image"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:id="@+id/righttext"
+
+                />
+
+            <Button
+                android:id="@+id/ButtonRightupload"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/righttext"
+                android:text="Upload">
+            </Button>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/rightImageView"
+                android:layout_below="@+id/ButtonRightupload"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:id="@+id/CanvasPreview1"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/previewImage"
+            android:text="Preview"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/saveSettings"
+
+            android:text="Save"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

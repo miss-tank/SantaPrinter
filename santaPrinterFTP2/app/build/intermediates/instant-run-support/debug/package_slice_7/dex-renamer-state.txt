@@ -1,0 +1,4 @@
+#Wed Apr 11 11:05:17 CDT 2018
+base.0=/Volumes/Windows/inProgress/santaPrinterFTP2/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex

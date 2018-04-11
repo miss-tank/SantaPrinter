@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Santa FTP2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tap">Now Loading...</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete">Delete Target Folder</string>
+    <string name="rename">Rename Target Folder</string>
+    <string name="nothing">Do nothing</string>
+    <string name="uploading">Uploading...</string>
+    <string name="cancel">Cancel</string>
+
+</resources>
